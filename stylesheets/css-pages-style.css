@@ -1,15 +1,22 @@
 /* 
-This makes it so that everything on the website is 62.5% of the
-frame of the website.
+  I chose the color scheme of gimblet and an of white for my website.
+  gimblet is a shade of yellow-green, which can bring a feeling of
+  joy and calmness when using this website. There is also a little
+  but of lightblue, which can also add calmness when using the website.
+*/
+
+/* 
+  This makes it so that everything on the website is 62.5% of the
+  frame of the website.
 */
 html {
   font-size: 62.5%;
 }
 
 /* 
-This CSS code makes the background of my website an off-white,
-makes the font size 18 pixels, and makes the font family first
-helvetica, then arial, then just the default sans-serif font.
+  This CSS code makes the background of my website an off-white,
+  makes the font size 18 pixels, and makes the font family first
+  helvetica, then arial, then just the default sans-serif font.
 */
 body {
   background-color: #f2f1f6;
@@ -18,8 +25,8 @@ body {
 }
 
 /* 
-This CSS code makes my navigation unordered list be aligned in the
-center of the screen, and makes it have no bullet points.
+  This CSS code makes my navigation unordered list be aligned in the
+  center of the screen, and makes it have no bullet points.
 */
 nav ul {
   text-align: center;
@@ -27,19 +34,19 @@ nav ul {
 }
 
 /* 
-This CSS code makes the space between my navigation and the top of the
-website 10 pixels.
+  This CSS code makes the space between my navigation and the top of the
+  website 10 pixels.
 */
 nav {
   padding-top: 10px;
 }
 
 /* 
-This CSS code makes everything in my header have a background of a gimblet,
-that fades into a darker shade of the color. Some applications are not able
-to run this, so if it does not work, it reverts to just the default gimblet.
-It also adds space between the sides of my screen and the elements on my 
-website.
+  This CSS code makes everything in my header have a background of a gimblet,
+  that fades into a darker shade of the color. Some applications are not able
+  to run this, so if it does not work, it reverts to just the default gimblet.
+  It also adds space between the sides of my screen and the elements on my 
+  website.
 */
 header {
   background-color: #bfab6b;
@@ -56,15 +63,15 @@ header {
 }
 
 /* 
-This makes my navigation links inline so they are next to each other.
+  This makes my navigation links inline so they are next to each other.
 */
 nav li {
   display: inline;
 }
 
 /* 
-This makes my navigation links not underlined, make the text color black,
-and puts 10 pixels of space between the links.
+  This makes my navigation links not underlined, make the text color black,
+  and puts 10 pixels of space between the links.
 */
 nav a {
   text-decoration: none;
@@ -73,10 +80,10 @@ nav a {
 }
 
 /* 
-This makes it so that the background color of my navigation links a light
-blue, and also makes it so that whenever a mouse hovers over the links,
-the background color eases in, making it not appear immediately, but 0.3
-seconds after.
+  This makes it so that the background color of my navigation links a light
+  blue, and also makes it so that whenever a mouse hovers over the links,
+  the background color eases in, making it not appear immediately, but 0.3
+  seconds after.
 */
 nav a:hover {
   background-color: #95c8e2;
@@ -84,9 +91,9 @@ nav a:hover {
 }
 
 /* 
-This makes it so that the image in the corner of my website on the left, 
-makes it so that it adds 20 pixels of space between the image so that the
-title can be more centered. It also gives it a width of 120 pixels.
+  This makes it so that the image in the corner of my website on the left, 
+  makes it so that it adds 20 pixels of space between the image so that the
+  title can be more centered. It also gives it a width of 120 pixels.
 */
 #logo {
   height: auto;
@@ -96,30 +103,30 @@ title can be more centered. It also gives it a width of 120 pixels.
 }
 
 /* 
-This makes it so that all h1 tags are 60 pixels big.
+  This makes it so that all h1 tags are 60 pixels big.
 */
 h1 {
   font-size: 6rem;
 }
 
 /* 
-This makes it so that all h2 sub-heading tags are 40 pixels big.
+  This makes it so that all h2 sub-heading tags are 40 pixels big.
 */
 h2 {
   font-size: 4rem;
 }
 
 /* 
-This makes it so that all paragraph tags have a line height of 33 pixels.
+  This makes it so that all paragraph tags have a line height of 33 pixels.
 */
 p {
   line-height: 33px;
 }
 
 /* 
-This makes it so that my title is aligned in the center of the screen, and
-so that the padding at the top is 25 pixels, and makes it so that the space
-at the bottom is 100 pixels.
+  This makes it so that my title is aligned in the center of the screen, and
+  so that the padding at the top is 25 pixels, and makes it so that the space
+  at the bottom is 100 pixels.
 */
 #title {
   padding-top: 25px;
@@ -128,8 +135,8 @@ at the bottom is 100 pixels.
 }
 
 /* 
-This makes it so that the first image on my homepage goes to the right of 
-the screen, and has space to the left of it that is 40 pixels big.
+  This makes it so that the first image on my homepage goes to the right of 
+  the screen, and has space to the left of it that is 40 pixels big.
 */
 #treaty-one-flag {
   float: right;
@@ -137,10 +144,10 @@ the screen, and has space to the left of it that is 40 pixels big.
 }
 
 /* 
-This makes it so that the first div has a background color that fades from 
-light white, to a gray color. If that does not work, it reverts back to a 
-solid gray color. The div also has a width of 1070 pixels, and has 10 pixels 
-of negative space to the left of it.
+  This makes it so that the first div has a background color that fades from 
+  light white, to a gray color. If that does not work, it reverts back to a 
+  solid gray color. The div also has a width of 1070 pixels, and has 10 pixels 
+  of negative space to the left of it.
 */
 #where-it-was-signed {
   background-color: #d8d8d8;
@@ -156,10 +163,10 @@ of negative space to the left of it.
 }
 
 /* 
-This makes it so that the is a very large picture of the depiction of the 
-signing of the first treaty is in the middle of the website, makes it have
-50 pixels of space on the top and bottom of the picture, and displays it
-as a block element.
+  This makes it so that the is a very large picture of the depiction of the 
+  signing of the first treaty is in the middle of the website, makes it have
+  50 pixels of space on the top and bottom of the picture, and displays it
+  as a block element.
 */
 #website-banner {
   margin: auto;
@@ -169,9 +176,9 @@ as a block element.
 }
 
 /* 
-This makes it so that the image of the map of all the treaty territories 
-goes to the right of the screen, and has 40 pixels of space to the left
-of it.
+  This makes it so that the image of the map of all the treaty territories 
+  goes to the right of the screen, and has 40 pixels of space to the left
+  of it.
 */
 #treaty-territories {
   float: right;
@@ -179,10 +186,10 @@ of it.
 }
 
 /* 
-This makes it so that the second div has color that fades from a light white
-to a gray color. If that does not work, it reverts back to a solid gray color.
-The width of the div is also 1025 pixels, and has 10 pixels of space to the left
-of it.
+  This makes it so that the second div has color that fades from a light white
+  to a gray color. If that does not work, it reverts back to a solid gray color.
+  The width of the div is also 1025 pixels, and has 10 pixels of space to the left
+  of it.
 */
 #locations-of-treaties {
   background-color: #d8d8d8;
@@ -198,8 +205,27 @@ of it.
 }
 
 /* 
-This makes everything in my footer is in the center of the screen.
+  This makes everything in my footer is in the center of the screen.
 */
 footer {
+  text-align: center;
+}
+
+/* 
+  This makes it so that the first div of the second web-page has a background 
+  color that fades from a light white to a gray color. If that does not work,
+  it reverts back to a solid gray color.
+*/
+#treaty-one-info {
+  background-color: #d8d8d8;
+  background-image: linear-gradient(
+    to right,
+    #a7a7a7,
+    #f2f1f6,
+    #f2f1f6,
+    #d8d8d8,
+    #f2f1f6,
+    #a7a7a7
+  );
   text-align: center;
 }
