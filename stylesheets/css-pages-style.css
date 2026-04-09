@@ -22,6 +22,7 @@ body {
   background-color: #f2f1f6;
   font-size: 1.8rem;
   font-family: Helvetica, Arial, sans-serif;
+  line-height: 33px;
 }
 
 /* 
@@ -117,18 +118,11 @@ h2 {
 }
 
 /* 
-  This makes it so that all paragraph tags have a line height of 33 pixels.
-*/
-p {
-  line-height: 33px;
-}
-
-/* 
   This makes it so that my title is aligned in the center of the screen, and
   so that the padding at the top is 25 pixels, and makes it so that the space
   at the bottom is 100 pixels.
 */
-#title {
+.title {
   padding-top: 25px;
   margin-bottom: 100px;
   text-align: center;
@@ -228,4 +222,24 @@ footer {
     #a7a7a7
   );
   text-align: center;
+}
+
+#major-events {
+  background-color: #d8d8d8;
+  background-image: linear-gradient(
+    to right,
+    #a7a7a7,
+    #f2f1f6,
+    #f2f1f6,
+    #d8d8d8,
+    #f2f1f6,
+    #a7a7a7
+  );
+  width: 1155px;
+}
+
+#treaty-map {
+  margin-top: 19px;
+  float: right;
+  display: inline;
 }
