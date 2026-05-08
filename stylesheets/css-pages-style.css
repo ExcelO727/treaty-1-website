@@ -36,10 +36,16 @@ nav ul {
 
 /* 
   This CSS code makes the space between my navigation and the top of the
-  website 10 pixels.
+  website 10 pixels. It will also make the background color of my nav the
+  same color as my
 */
 nav {
+  background: rgba(240, 243, 252, 0.97);
   padding-top: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 4.7px 4.7px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* 
@@ -50,9 +56,7 @@ nav {
   website.
 */
 header {
-  padding-bottom: 1px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 100px 10px 1px;
 }
 
 /* 
@@ -68,8 +72,17 @@ nav li {
 */
 nav a {
   text-decoration: none;
-  color: black;
+  color: #ededed;
   padding: 10px;
+  margin-left: 20px;
+  background-color: #172e74;
+}
+
+/* 
+  Using yellow here because of the yellow colour in the treaty one flag.
+*/
+nav a:visited {
+  color: rgb(255, 255, 183);
 }
 
 /* 
@@ -79,8 +92,14 @@ nav a {
   seconds after.
 */
 nav a:hover {
-  background-color: #d7d7d7;
-  transition: background-color 0.3s ease-in-out;
+  background-color: #ededed;
+  color: #172e74;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 4.7px 6px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav a:visited:hover {
+  background-color: rgb(255, 255, 183);
 }
 
 /* 
@@ -137,12 +156,18 @@ h2 {
 */
 #where-it-was-signed {
   background-color: whitesmoke;
-  box-shadow: 4.7px 4.7px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 4.7px 4.7px 8px rgba(0, 0, 0, 0.1);
   border: solid 0.5px #a7a7a7;
   border-radius: 20px;
   margin-top: 7px;
   width: 1070px;
   padding-left: 10px;
+}
+
+#where-it-was-signed:hover {
+  box-shadow: 4.7px 6px 5px rgba(0, 0, 0, 0.5);
+  translate: 0px 10px;
+  transition: translate 0.4s ease-in-out;
 }
 
 /* 
@@ -176,7 +201,7 @@ h2 {
 */
 #locations-of-treaties {
   background-color: whitesmoke;
-  box-shadow: 4.7px 4.7px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 4.7px 4.7px 8px rgba(0, 0, 0, 0.1);
   border: solid 0.5px #a7a7a7;
   border-radius: 20px;
   width: 1025px;
@@ -197,7 +222,7 @@ footer {
 */
 #treaty-one-info {
   background-color: whitesmoke;
-  box-shadow: 4.7px 4.7px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 4.7px 4.7px 8px rgba(0, 0, 0, 0.1);
   border: solid 0.5px #a7a7a7;
   border-radius: 20px;
   padding-left: 10px;
@@ -208,7 +233,7 @@ footer {
 
 #major-events {
   background-color: whitesmoke;
-  box-shadow: 4.7px 4.7px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 4.7px 4.7px 8px rgba(0, 0, 0, 0.1);
   border: solid 0.5px #a7a7a7;
   border-radius: 20px;
   width: 1155px;
