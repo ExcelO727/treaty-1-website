@@ -1,10 +1,24 @@
 /* 
-  I chose the color scheme of gimblet and an of white for my website.
-  gimblet is a shade of yellow-green, which can bring a feeling of
-  joy and calmness when using this website. There is also a little
-  but of lightblue, which can also add calmness when using the website.
+  I chose the color scheme of a very light blue for the background
+  color and an off white for my div background colors. I chose
+  light blue because it adds a subtle feeling of calmness which
+  is important when going through websites because it is not too
+  eye catching, but not too subtle at the same time, so it doesn't
+  disturb the user's eyes, but does not go unnoticed either. I chose
+  off white because dark colored text on top of light colored background
+  is the best color combination for easy readability, and since it is 
+  not encouraged to use pure white or pure black, I used an off white.
+  I also used this color combination so that whoever is reading this
+  website can retain the information, and learn more about the treaties.
+  I also used a sans serif font because this website will mostly be
+  targetting younger audiences, and since sans serif is more modern and 
+  commonly used, I used it instead of serif.
 */
-
+* {
+  line-height: 140%;
+  letter-spacing: 0.02rem;
+  word-spacing: 0.02rem;
+}
 /* 
   This makes it so that everything on the website is 62.5% of the
   frame of the website.
@@ -22,7 +36,6 @@ body {
   background-color: #f0f3fc;
   font-size: 1.8rem;
   font-family: Helvetica, Arial, sans-serif;
-  line-height: 33px;
 }
 
 /* 
@@ -46,6 +59,7 @@ nav {
   top: 0;
   width: 100%;
   box-shadow: 4.7px 4.7px 8px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
 }
 
 /* 
@@ -76,6 +90,10 @@ nav a {
   padding: 10px;
   margin-left: 20px;
   background-color: #172e74;
+  transition:
+    box-shadow 0.3s ease-in-out,
+    color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out;
 }
 
 /* 
@@ -94,7 +112,6 @@ nav a:visited {
 nav a:hover {
   background-color: #ededed;
   color: #172e74;
-  transition: all 0.3s ease-in-out;
   box-shadow: 4.7px 6px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -162,12 +179,14 @@ h2 {
   margin-top: 7px;
   width: 1070px;
   padding-left: 10px;
+  transition:
+    translate 0.43s ease-out,
+    box-shadow 0.2s ease-in;
 }
 
 #where-it-was-signed:hover {
   box-shadow: 4.7px 6px 5px rgba(0, 0, 0, 0.5);
-  translate: 0px 10px;
-  transition: translate 0.4s ease-in-out;
+  translate: 0px -10px;
 }
 
 /* 
@@ -206,6 +225,18 @@ h2 {
   border-radius: 20px;
   width: 1025px;
   padding-left: 10px;
+  transition:
+    translate 0.43s ease-out,
+    box-shadow 0.2s ease-in;
+}
+
+/* 
+  This makes the box shadow of my div much darker when it gets hovered 
+  over, and makes the div move 10 pixels up when hovered over.
+*/
+#locations-of-treaties:hover {
+  box-shadow: 4.7px 6px 5px rgba(0, 0, 0, 0.5);
+  translate: 0px -10px;
 }
 
 /* 
@@ -218,7 +249,8 @@ footer {
 /* 
   This makes it so that the first div of the second web-page has a background 
   color that fades from a light white to a gray color. If that does not work,
-  it reverts back to a solid gray color.
+  it reverts back to a solid gray color. It also transitions the translate
+  and box-shadow properties from #treaty-one-info:hover so that it eases in nicely.
 */
 #treaty-one-info {
   background-color: whitesmoke;
@@ -226,23 +258,80 @@ footer {
   border: solid 0.5px #a7a7a7;
   border-radius: 20px;
   padding-left: 10px;
+  padding: 10px 50px;
   height: auto;
   width: auto;
   margin-bottom: 15px;
+  transition:
+    translate 0.43s ease-out,
+    box-shadow 0.2s ease-in;
 }
 
+/* 
+  This makes the box shadow of my div much darker when it gets hovered 
+  over, and makes the div move 10 pixels up when hovered over.
+*/
+#treaty-one-info:hover {
+  box-shadow: 4.7px 6px 5px rgba(0, 0, 0, 0.5);
+  translate: 0px -10px;
+}
+
+/* 
+  This makes the second div of the second webpage have a background color
+  of whitesmoke, makes the box shadow visible, but not too visible so it
+  can have a nice subtle effect. It also makes it so that the div has a 
+  border that is 0.5 pixels big and have a dark gray colour that will make
+  it easily distinguishable from the background color. Border radius makes 
+  the border curved and not fully rectangular, this css code gives it a 
+  width of 1155 pixels, and adds 10 pixels of padding space to the left 
+  of it and 10 pixels of margin space on the top of it. It also transitions 
+  the translate and box-shadow properties from #major-events:hover so that 
+  it eases in nicely.
+*/
 #major-events {
   background-color: whitesmoke;
   box-shadow: 4.7px 4.7px 8px rgba(0, 0, 0, 0.1);
   border: solid 0.5px #a7a7a7;
   border-radius: 20px;
-  width: 1155px;
-  padding-left: 10px;
+  width: 1050px;
+  padding: 10px 50px;
   margin-top: 10px;
+  transition:
+    translate 0.43s ease-out,
+    box-shadow 0.2s ease-in;
+}
+
+/* 
+  This makes the box shadow of my div much darker when it gets hovered 
+  over, and makes the div move 10 pixels up when hovered over.
+*/
+#major-events:hover {
+  box-shadow: 4.7px 6px 5px rgba(0, 0, 0, 0.5);
+  translate: 0px -10px;
 }
 
 #treaty-map {
   margin-top: 19px;
   float: right;
   display: inline;
+  margin-right: 10px;
+  translate: 0px 40px;
+}
+
+#before-treaty {
+  background-color: whitesmoke;
+  box-shadow: 4.7px 4.7px 8px rgba(0, 0, 0, 0.1);
+  border: solid 0.5px #a7a7a7;
+  border-radius: 20px;
+  width: 1145px;
+  padding-left: 10px;
+  margin-top: 10px;
+  transition:
+    translate 0.43s ease-out,
+    box-shadow 0.2s ease-in;
+}
+
+#before-treaty:hover {
+  box-shadow: 4.7px 6px 5px rgba(0, 0, 0, 0.5);
+  translate: 0px -10px;
 }
