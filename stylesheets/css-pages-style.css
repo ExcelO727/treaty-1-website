@@ -316,14 +316,11 @@ footer {
   float: right;
   display: inline;
   margin-right: 10px;
-  transition:
-    box-shadow 0.2s ease-in,
-    translate 0.43s ease-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
 #treaty-map:hover {
-  translate: 0px -5px;
-  box-shadow: 4.7px 6px 5px rgba(0, 0, 0, 0.5);
+  opacity: 0.55;
 }
 
 #before-treaty {
@@ -356,7 +353,8 @@ footer {
   box-shadow: 4.7px 4.7px 8px rgba(0, 0, 0, 0.1);
   border: solid 0.5px #a7a7a7;
   border-radius: 20px;
-  width: 1145px;
+  height: auto;
+  width: auto;
   padding: 10px 50px;
   margin-top: 10px;
   transition:
