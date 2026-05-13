@@ -331,7 +331,7 @@ footer {
   box-shadow: 4.7px 4.7px 8px rgba(0, 0, 0, 0.1);
   border: solid 0.5px #a7a7a7;
   border-radius: 20px;
-  width: 1145px;
+  width: 1050px;
   padding: 10px 50px;
   margin-top: 10px;
   transition:
@@ -342,6 +342,13 @@ footer {
 #before-treaty:hover {
   box-shadow: 4.7px 6px 5px rgba(0, 0, 0, 0.5);
   translate: 0px -10px;
+}
+
+#rupert-map {
+  margin-top: 60px;
+  float: right;
+  display: inline;
+  margin-right: 10px;
 }
 
 #treaty-one-today {
