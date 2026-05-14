@@ -14,11 +14,17 @@
   targetting younger audiences, and since sans serif is more modern and 
   commonly used, I used it instead of serif.
 */
+
+/* 
+  This makes it so that the line height of all the lines in the website is
+  1.4x space apart, more letter spacing, and more word spacing.
+*/
 * {
   line-height: 140%;
   letter-spacing: 0.02rem;
   word-spacing: 0.02rem;
 }
+
 /* 
   This makes it so that everything on the website is 62.5% of the
   frame of the website.
@@ -48,9 +54,15 @@ nav ul {
 }
 
 /* 
-  This CSS code makes the space between my navigation and the top of the
-  website 10 pixels. It will also make the background color of my nav the
-  same color as my
+  This CSS code makes the background of my nav the same as the whole website,
+  but have a bit less opacity making it so that when it scrolls over other
+  elements, it does not fully block them out, and gives it a nicer look.
+  It adds 10 pixels of padding sapce to the top, and gives it a position of
+  fixed, always keeps it in the spot that it is in, and follows you when you
+  are scrolling through the website. It gives it a width of 100% of the website,
+  making it centered in the middle, and also gives it a box shadow, seperating it
+  from the rest of the website's background. It has a z-index of 9999 which puts
+  it above the rest of the website's elements when you scroll down.
 */
 nav {
   background: rgba(240, 243, 252, 0.97);
@@ -63,11 +75,8 @@ nav {
 }
 
 /* 
-  This CSS code makes everything in my header have a background of a gimblet,
-  that fades into a darker shade of the color. Some applications are not able
-  to run this, so if it does not work, it reverts to just the default gimblet.
-  It also adds space between the sides of my screen and the elements on my 
-  website.
+  This CSS code makes everything in my header have 100 pixels of padding space at 
+  the top, 10 pixels at the left, and 1 pixel at the right.
 */
 header {
   padding: 100px 10px 1px;
@@ -81,8 +90,10 @@ nav li {
 }
 
 /* 
-  This makes my navigation links not underlined, make the text color black,
-  and puts 10 pixels of space between the links.
+  This makes my navigation links not underlined, make the text color lighter,
+  10 pixels of padding all around it, 20 pixels of margin space at the left of
+  it, has a background color of dark blue, and transitions the box shadow, color,
+  and background color when it is hovered over.
 */
 nav a {
   text-decoration: none;
@@ -97,17 +108,17 @@ nav a {
 }
 
 /* 
-  Using yellow here because of the yellow colour in the treaty one flag.
+  Changes the color of the nav to light yellow when hovered over. I used orange 
+  because of the yellow in the Treaty One flag.
 */
 nav a:visited {
   color: rgb(255, 255, 183);
 }
 
 /* 
-  This makes it so that the background color of my navigation links a light
-  blue, and also makes it so that whenever a mouse hovers over the links,
-  the background color eases in, making it not appear immediately, but 0.3
-  seconds after.
+  This makes it so that the background color of my navigation links an off
+  white, the color of the text a dark blue, and the box shadow much darker 
+  than when it is not being hovered over.
 */
 nav a:hover {
   background-color: #ededed;
@@ -115,6 +126,11 @@ nav a:hover {
   box-shadow: 4.7px 6px 5px rgba(0, 0, 0, 0.5);
 }
 
+/* 
+  This makes it so that if you have visited the website, and if it hovered 
+  over, the background color changes to a light yellow. Again, using
+  yellow for the Treaty One flag.
+*/
 nav a:visited:hover {
   background-color: rgb(255, 255, 183);
 }
@@ -167,10 +183,13 @@ h2 {
 }
 
 /* 
-  This makes it so that the first div has a background color that fades from 
-  light white, to a gray color. If that does not work, it reverts back to a 
-  solid gray color. The div also has a width of 1070 pixels, and has 10 pixels 
-  of negative space to the left of it.
+  This makes it so that this div has a backgound color of whitesmoke, a subtle
+  box shadow that adds a ice effect, a very thin border, but not too thin so 
+  that it can seperate it from the background color. It also makes the border
+  rounder and not fully rectangular, puts 7 pixels of margin space at the top,
+  makes the width of the div 973 pixels, and adds 10 pixels of padding at the 
+  sides, and 50 pixels of padding at the top and bottom. It also transitions
+  the translate and box shadow to ease in and out instead of just appearing.
 */
 #where-it-was-signed {
   background-color: whitesmoke;
@@ -185,6 +204,10 @@ h2 {
     box-shadow 0.2s ease-in;
 }
 
+/* 
+  This makes it so that when the div is hovered over, its box shadow thickens, 
+  and it moves upwards a little.
+*/
 #where-it-was-signed:hover {
   box-shadow: 4.7px 6px 5px rgba(0, 0, 0, 0.5);
   translate: 0px -10px;
@@ -206,7 +229,7 @@ h2 {
 /* 
   This makes it so that the image of the map of all the treaty territories 
   goes to the right of the screen, and has 40 pixels of space to the left
-  of it.
+  of it. Translate makes it move 9 pixels downward.
 */
 #treaty-territories {
   float: right;
@@ -215,10 +238,13 @@ h2 {
 }
 
 /* 
-  This makes it so that the second div has color that fades from a light white
-  to a gray color. If that does not work, it reverts back to a solid gray color.
-  The width of the div is also 1025 pixels, and has 10 pixels of space to the left
-  of it.
+  This makes it so that this div has a backgound color of whitesmoke, a subtle
+  box shadow that adds a ice effect, a very thin border, but not too thin so 
+  that it can seperate it from the background color. It also makes the border
+  rounder and not fully rectangular, puts 7 pixels of margin space at the top,
+  makes the width of the div 930 pixels, and adds 10 pixels of padding at the 
+  sides, and 50 pixels of padding at the top and bottom. It also transitions
+  the translate and box shadow to ease in and out instead of just appearing.
 */
 #locations-of-treaties {
   background-color: whitesmoke;
@@ -242,17 +268,20 @@ h2 {
 }
 
 /* 
-  This makes everything in my footer is in the center of the screen.
+  This makes everything in my footer centered.
 */
 footer {
   text-align: center;
 }
 
 /* 
-  This makes it so that the first div of the second web-page has a background 
-  color that fades from a light white to a gray color. If that does not work,
-  it reverts back to a solid gray color. It also transitions the translate
-  and box-shadow properties from #treaty-one-info:hover so that it eases in nicely.
+  This makes it so that this div has a backgound color of whitesmoke, a subtle
+  box shadow that adds a ice effect, a very thin border, but not too thin so 
+  that it can seperate it from the background color. It also makes the border
+  rounder and not fully rectangular, puts 7 pixels of margin space at the top,
+  makes the width and height of the div auto, and adds 10 pixels of padding at the 
+  sides, and 50 pixels of padding at the top and bottom. It also transitions
+  the translate and box shadow to ease in and out instead of just appearing.
 */
 #treaty-one-info {
   background-color: whitesmoke;
@@ -284,7 +313,7 @@ footer {
   border that is 0.5 pixels big and have a dark gray colour that will make
   it easily distinguishable from the background color. Border radius makes 
   the border curved and not fully rectangular, this css code gives it a 
-  width of 1155 pixels, and adds 10 pixels of padding space to the left 
+  width of 1050 pixels, and adds 10 pixels of padding space to the left 
   of it and 10 pixels of margin space on the top of it. It also transitions 
   the translate and box-shadow properties from #major-events:hover so that 
   it eases in nicely.
@@ -311,18 +340,40 @@ footer {
   translate: 0px -10px;
 }
 
+/* 
+  This makes it so that this image floats to the right, displays as an inline 
+  element so that it can be beside the other elements, 60 pixels of margin space
+  at the top, and 10 pixels at the right, and transitions the opacity when it is
+  hovered over to ease in and out.
+*/
 #treaty-map {
   margin-top: 60px;
+  margin-right: 10px;
   float: right;
   display: inline;
-  margin-right: 10px;
   transition: opacity 0.3s ease-in-out;
 }
 
+/* 
+  This makes it so that when the treaty map images is overed over, the opacity 
+  changes to signify that the image can be clicked on.
+*/
 #treaty-map:hover {
   opacity: 0.55;
 }
 
+/* 
+  This makes the second div of the second webpage have a background color
+  of whitesmoke, makes the box shadow visible, but not too visible so it
+  can have a nice subtle effect. It also makes it so that the div has a 
+  border that is 0.5 pixels big and have a dark gray colour that will make
+  it easily distinguishable from the background color. Border radius makes 
+  the border curved and not fully rectangular, this css code gives it a 
+  width of 1050 pixels, and adds 10 pixels of padding space to the left 
+  of it and 10 pixels of margin space on the top of it. It also transitions 
+  the translate and box-shadow properties from #major-events:hover so that 
+  it eases in nicely.
+*/
 #before-treaty {
   background-color: whitesmoke;
   box-shadow: 4.7px 4.7px 8px rgba(0, 0, 0, 0.1);
@@ -336,11 +387,21 @@ footer {
     box-shadow 0.2s ease-in;
 }
 
+/* 
+  This makes the box shadow of my div much darker when it gets hovered 
+  over, and makes the div move 10 pixels up when hovered over.
+*/
 #before-treaty:hover {
   box-shadow: 4.7px 6px 5px rgba(0, 0, 0, 0.5);
   translate: 0px -10px;
 }
 
+/* 
+  This makes it so that this image floats to the right, and displays as
+  an inline element so that it can be beside the other elements, has 
+  10 pixels of space at the right of it, and 60 pixels of space at the
+  top of it.
+*/
 #rupert-map {
   margin-top: 60px;
   float: right;
@@ -348,6 +409,18 @@ footer {
   margin-right: 10px;
 }
 
+/* 
+  This makes the second div of the second webpage have a background color
+  of whitesmoke, makes the box shadow visible, but not too visible so it
+  can have a nice subtle effect. It also makes it so that the div has a 
+  border that is 0.5 pixels big and have a dark gray colour that will make
+  it easily distinguishable from the background color. Border radius makes 
+  the border curved and not fully rectangular, this css code makes it so that
+  the height and width of it is auto, and adds 10 pixels of padding space to the left 
+  of it and 10 pixels of margin space on the top of it. It also transitions 
+  the translate and box-shadow properties from #major-events:hover so that 
+  it eases in nicely.
+*/
 #treaty-one-today {
   background-color: whitesmoke;
   box-shadow: 4.7px 4.7px 8px rgba(0, 0, 0, 0.1);
@@ -362,21 +435,40 @@ footer {
     box-shadow 0.2s ease-in;
 }
 
+/* 
+  This makes the box shadow of my div much darker when it gets hovered 
+  over, and makes the div move 10 pixels up when hovered over.
+*/
 #treaty-one-today:hover {
   box-shadow: 4.7px 6px 5px rgba(0, 0, 0, 0.5);
   translate: 0px -10px;
 }
 
+/* 
+  This makes it so that all the anchor tags that make up the more 
+  information section have no text decoration, makes it so that
+  the text color is near black, and transitions the opacity when
+  it is hovered over the ease in and out.
+*/
 .more-info {
   text-decoration: none;
   color: #121212;
   transition: opacity 0.2s ease-in-out;
 }
 
+/* 
+  This makes it so that any of the anchor tags in the more information
+  seciton are hovered over, their opacity gets lighter.
+*/
 .more-info:hover {
   opacity: 0.35;
 }
 
+/* 
+This makes the image of the website symbol display as an inline element
+so that it can stay beside the other elements, floats the image to the
+right, and translates it 80 pixels to the right and 50 pixels downward.
+*/
 #web-sign {
   display: inline;
   float: right;
