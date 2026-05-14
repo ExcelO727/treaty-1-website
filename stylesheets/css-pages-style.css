@@ -366,3 +366,19 @@ footer {
   box-shadow: 4.7px 6px 5px rgba(0, 0, 0, 0.5);
   translate: 0px -10px;
 }
+
+.more-info {
+  text-decoration: none;
+  color: #121212;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.more-info:hover {
+  opacity: 0.35;
+}
+
+#web-sign {
+  display: inline;
+  float: right;
+  translate: -80px 50px;
+}
